@@ -144,7 +144,7 @@ linear-gradient(rgba(47, 48, 58, 0.4),
 rgba(47, 48, 58, 0.4)),
 url(../images/hero.jpg);
 max-width: 1600px;
-background-position: 50% 50%;
+background-position: center;
 }
 
 .hero-container {
@@ -313,10 +313,21 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--basic-color-text);
 }
-.team-list,
+
+.team-list
+ {
+list-style: none;
+display: flex;
+}
+
+.team-icon-item:not(:last-child){
+margin-right: 10px;
+}
+
 .team-icon-list {
 list-style: none;
 display: flex;
+justify-content: center;
 }
 
 .team-text {
