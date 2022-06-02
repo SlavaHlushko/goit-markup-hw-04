@@ -104,9 +104,6 @@ flex-direction: row-reverse;
 margin-right: 30px;
 }
 
-.header-list-item {
-
-}
 
 .mail-icon,
 .tel-icon {
@@ -143,8 +140,9 @@ background-image:
 linear-gradient(rgba(47, 48, 58, 0.4), 
 rgba(47, 48, 58, 0.4)),
 url(../images/hero.jpg);
-max-width: 1600px;
 background-position: center;
+background-repeat: no-repeat;
+max-width: 1600;
 }
 
 .hero-container {
@@ -320,6 +318,11 @@ list-style: none;
 display: flex;
 }
 
+.team-icon-item {
+margin-top: 16px;
+margin-bottom: 30px;
+}
+
 .team-icon-item:not(:last-child){
 margin-right: 10px;
 }
@@ -372,14 +375,74 @@ justify-content: center;
 .char-icon-team {
 fill: #AFB1B8
 }
-.card-link:hover
+.card-link:hover,
+.card-link:focus
 {
 background-color: #2196F3;
 
 }
 
-.char-icon-team:hover {
+.card-link:hover .char-icon-team {
 fill: var(--header-background-color);
+
+}
+
+
+
+
+/*----------Постоянные клиенты--------------*/
+
+.section-clients{
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.header-clients {
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--basic-color-text);
+
+margin-bottom: 50px;
+}
+
+
+.clients-list {
+list-style: none;
+display: flex;
+
+}
+
+.clients-list-item {
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.clients-list-item:not(:last-child) {
+margin-right: 30px;
+}
+
+
+.clients-link {
+fill: #AFB1B8;
+}
+
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+border: 1px solid #2196F3;
+}
+
+.clients-list-item:hover .clients-icon, 
+.clients-list-item:hover .clients-icon {
+fill:#2196F3;
 
 }
 
@@ -447,6 +510,49 @@ list-style: none;
     
 }
 
+.footer-container {
+display: flex;
+align-items: baseline;
+}
+
+
+.container-soc {
+margin-left: 70px;
+}
+
+
+.header-soc {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--header-background-color);
+}
+
+.card-soc {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+}
+
+.card-soc:hover,
+.card-soc:focus 
+{
+background-color: #2196F3;
+}
+
+
+.soc-icon {
+fill: var(--header-background-color);
+}
+
+
+
+
 /*-------СТИЛІ СТОРІНКИ ПОРТФОЛІО------------*/
 
 /*-------Фильтр-----------*/
@@ -512,6 +618,12 @@ margin-left: 30px;
 margin-bottom: 30px;
 
 }
+
+.project-list-item:hover,
+.project-list-item:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .project-title {
 margin-bottom: 4px;
