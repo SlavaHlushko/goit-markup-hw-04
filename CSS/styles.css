@@ -95,10 +95,28 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: var(--secondary-color-text);
+align-items: center;
 }
 
 .header-mail {
-margin-right: 50px;
+display: flex;
+flex-direction: row-reverse;
+margin-right: 30px;
+}
+
+.header-list-item {
+
+}
+
+.mail-icon,
+.tel-icon {
+margin-right: 10px;
+}
+
+
+.header-tel {
+display: flex;
+flex-direction: row-reverse;
 }
 
 .header-link:hover,
@@ -106,15 +124,27 @@ margin-right: 50px;
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
-.header-tel:focus {
+.header-tel:focus,
+.mail-icon:hover,
+.mail-icon:focus,
+.tel-icon:hover,
+.tel-icon:focus {
+ 
 color: #2196F3;
+fill: #2196F3;
 }
 
 
 
 /*-------Герой---------*/
 .section-hero {
-background-color: var(--hero-footer-background-color);
+
+background-image: 
+linear-gradient(rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/hero.jpg);
+max-width: 1600px;
+background-position: 50% 50%;
 }
 
 .hero-container {
@@ -156,12 +186,23 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 background-color: #2196F3;
 }
-.btn:hover,
-.btn:focus {
-background-color:  #2196F3;
-}
+
 
 /*-------Особенности------------*/
+.container-item {
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+display: flex;
+justify-content: center;
+background-color: var(--secondary-main-background-color);
+align-items: center;
+}
+
+.char-item {
+justify-content: center;
+}
+
 .section-char {
 padding-top: 94px;
 
@@ -215,6 +256,7 @@ margin-left: 30px;
 .section-char-item:nth-child(n+2) {
 margin-left: 30px;
 }
+
 
 
 /*-------Примеры работ------------*/
@@ -271,7 +313,8 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--basic-color-text);
 }
-.team-list {
+.team-list,
+.team-icon-list {
 list-style: none;
 display: flex;
 }
@@ -285,16 +328,47 @@ color: var(--secondary-color-text);
 }
 
 .section-team-item {
+width: 270px;
+height: 428px;
 margin-top: 50px;
+
+background-color: var(--header-background-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 .section-team-item:nth-child(n+2) {
 margin-left: 30px;
 }
 
+
 .container-card {
 padding-top: 30px;
 padding-bottom: 30px;
 text-align: center;
+
+}
+
+.card-link {
+display: flex;
+width: 44px;
+height: 44px; 
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+}
+.char-icon-team {
+fill: #AFB1B8
+}
+.card-link:hover
+{
+background-color: #2196F3;
+
+}
+
+.char-icon-team:hover {
+fill: var(--header-background-color);
 
 }
 
