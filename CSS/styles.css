@@ -592,6 +592,7 @@ color: var(--basic-color-text);
 .btn-item:hover,
 .btn.item:focus {
 background-color: #2196F3;
+color: var(--header-background-color);
 }
 
 /*-------Список проектов-----------*/
