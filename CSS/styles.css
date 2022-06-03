@@ -129,6 +129,7 @@ flex-direction: row-reverse;
  
 color: #2196F3;
 fill: #2196F3;
+outline: none;
 }
 
 
@@ -375,14 +376,21 @@ justify-content: center;
 .char-icon-team {
 fill: #AFB1B8
 }
-.card-link:hover,
-.card-link:focus
+.card-link:hover
 {
 background-color: #2196F3;
 
 }
 
-.card-link:hover .char-icon-team {
+.card-link:focus {
+    background-color: #2196F3;
+    outline: none;
+}
+
+
+.card-link:hover .char-icon-team,
+.card-link:focus .char-icon-team
+ {
 fill: var(--header-background-color);
 
 }
@@ -431,21 +439,38 @@ margin-right: 30px;
 
 
 .clients-link {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
 fill: #AFB1B8;
 }
 
 
-.clients-list-item:hover,
-.clients-list-item:focus {
+
+.clients-list-item:hover ,
+.clients-list-item:focus  {
 border: 1px solid #2196F3;
 }
 
-.clients-list-item:hover .clients-icon, 
-.clients-list-item:hover .clients-icon {
+.clients-link:hover {
 fill:#2196F3;
-
 }
 
+.clients-link:focus {
+fill: #2196F3;
+outline: 1px solid #2196F3;
+}
+.clients-list-item:hover .clients-link
+ {
+fill: #2196F3;
+
+}
+.clients-list-item:focus .clients-link {
+fill: #2196F3;
+outline: none;
+}
 /*-------Футер------------*/
 .footer {
 background-color: var(--hero-footer-background-color);
@@ -539,10 +564,14 @@ background-color: rgba(255, 255, 255, 0.1);
 border-radius: 50%;
 }
 
-.card-soc:hover,
-.card-soc:focus 
+.card-soc:hover
 {
 background-color: #2196F3;
+}
+
+.card-soc:focus {
+background-color: #2196F3;
+outline: none;
 }
 
 
@@ -589,10 +618,16 @@ letter-spacing: 0.03em;
 color: var(--basic-color-text);
 }   
 
-.btn-item:hover,
-.btn.item:focus {
+.btn-item:hover
+ {
 background-color: #2196F3;
 color: var(--header-background-color);
+}
+
+.btn-item:focus {
+background-color: #2196F3;
+color: var(--header-background-color);
+outline: none;
 }
 
 /*-------Список проектов-----------*/
